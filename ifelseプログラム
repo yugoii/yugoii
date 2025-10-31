@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() 
+{
+    int r, p;
+
+    printf("いくらのものを買いましたか？");
+    scanf("%d", &r);
+
+    printf("いくら支払いますか？");
+    scanf("%d", &p);
+
+
+    if (r > p)
+    {
+        printf("あと%d円必要です。\n", r - p);
+    }
+    else if (r < p)
+    {
+        printf("お釣りは%d円です。\n", p - r);
+    } 
+    else
+    {
+        printf("ちょうどのお支払いです。");
+    }
+
+    return 0;
+}
